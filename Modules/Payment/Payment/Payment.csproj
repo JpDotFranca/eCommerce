@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Features\CreditCard\" />
+		<Folder Include="Domain\Entities\" />
+		<Folder Include="Infraestructure\Database\" />
+		<Folder Include="Infraestructure\Http\" />
+		<Folder Include="Infraestructure\MessageBroker\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MediatR" />
+		<PackageReference Include="FluentResults" />
+
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" /> 
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Payment.Contracts\Payment.Contracts.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/Commons/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <Project Path="ArchTests/ArchTests.csproj" />
+    <Project Path="CommonLibrary/CommonLibrary.csproj" />
+  </Folder>
+  <Folder Name="/Hosts/">
+    <Project Path="Playground/Playground.csproj" />
+  </Folder>
+  <Folder Name="/Modules/" />
+  <Folder Name="/Modules/Payment/">
+    <Project Path="Modules/Payment/Payment.Contracts/Payment.Contracts.csproj" />
+    <Project Path="Modules/Payment/Payment.Tests/Payment.Tests.csproj" />
+    <Project Path="Modules/Payment/Payment/Payment.csproj" />
+  </Folder>
+</Solution>

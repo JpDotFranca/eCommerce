@@ -1,0 +1,13 @@
+ <Project>
+    <PropertyGroup>
+      <!-- .NET Version -->
+      <TargetFramework>net8.0</TargetFramework>
+      <LangVersion>latest</LangVersion>
+      <Nullable>enable</Nullable>
+      <ImplicitUsings>enable</ImplicitUsings>
+
+      <!-- Common Build Properties -->
+      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+      <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    </PropertyGroup>
+  </Project>
