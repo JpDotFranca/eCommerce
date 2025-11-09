@@ -2,13 +2,20 @@
   <Folder Name="/Commons/">
     <File Path="Directory.Build.props" />
     <File Path="Directory.Packages.props" />
+    <File Path="README.md" />
     <Project Path="ArchTests/ArchTests.csproj" />
     <Project Path="CommonLibrary/CommonLibrary.csproj" />
   </Folder>
   <Folder Name="/Hosts/">
-    <Project Path="Playground/Playground.csproj" />
+    <Project Path="Hosts/eCommerce.API/eCommerce.API.csproj" Id="48fc1487-27f1-4f39-a8d7-eb17a906db73" />
+    <Project Path="Hosts/Playground/Playground.csproj" />
   </Folder>
   <Folder Name="/Modules/" />
+  <Folder Name="/Modules/Customers/">
+    <Project Path="Modules/Customers/Customers.Contracts/Customers.Contracts.csproj" Id="7fbb2f10-7553-461b-bb4b-da5976ad756b" />
+    <Project Path="Modules/Customers/Customers.Tests/Customers.Tests.csproj" Id="32de32b2-eb6f-4278-925e-841b314fb098" />
+    <Project Path="Modules/Customers/Customers/Customers.csproj" Id="52b59d91-b533-4dfb-8dbf-ea2c3d0e2ad2" />
+  </Folder>
   <Folder Name="/Modules/Payment/">
     <Project Path="Modules/Payment/Payment.Contracts/Payment.Contracts.csproj" />
     <Project Path="Modules/Payment/Payment.Tests/Payment.Tests.csproj" />
