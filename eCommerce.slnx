@@ -4,19 +4,39 @@
     <File Path="Directory.Packages.props" />
     <File Path="README.md" />
     <Project Path="ArchTests/ArchTests.csproj" />
-    <Project Path="CommonLibrary/CommonLibrary.csproj" />
   </Folder>
   <Folder Name="/Hosts/">
     <Project Path="Hosts/eCommerce.API/eCommerce.API.csproj" Id="48fc1487-27f1-4f39-a8d7-eb17a906db73" />
     <Project Path="Hosts/Playground/Playground.csproj" />
   </Folder>
   <Folder Name="/Modules/" />
+  <Folder Name="/Modules/Catalog/">
+    <File Path="Modules/Catalog/README.md" />
+    <Project Path="Modules/Catalog/Catalog.Contracts/Catalog.Contracts.csproj" Id="553a4833-661b-461b-b6a4-ba06148fc5de" />
+    <Project Path="Modules/Catalog/Catalog.Tests/Catalog.Tests.csproj" Id="545947b4-191b-4db6-b49e-55962aad23cc" />
+    <Project Path="Modules/Catalog/Catalog/Catalog.csproj" Id="c727dd23-f71e-4f64-8f35-71e3943c03d5" />
+ 
+  </Folder>
   <Folder Name="/Modules/Customers/">
+    <File Path="Modules/Customers/README.md" />
     <Project Path="Modules/Customers/Customers.Contracts/Customers.Contracts.csproj" Id="7fbb2f10-7553-461b-bb4b-da5976ad756b" />
     <Project Path="Modules/Customers/Customers.Tests/Customers.Tests.csproj" Id="32de32b2-eb6f-4278-925e-841b314fb098" />
     <Project Path="Modules/Customers/Customers/Customers.csproj" Id="52b59d91-b533-4dfb-8dbf-ea2c3d0e2ad2" />
   </Folder>
+  <Folder Name="/Modules/Notifications/">
+    <File Path="Modules/Notifications/README.md" />
+    <Project Path="Modules/Notifications/Notifications.Contracts/Notifications.Contracts.csproj" Id="03823e0d-072d-4289-95c9-00e6be243bae" />
+    <Project Path="Modules/Notifications/Notifications.Tests/Notifications.Tests.csproj" Id="1e180e14-e51e-4de9-b2bb-6a036db88cb4" />
+    <Project Path="Modules/Notifications/Notifications/Notifications.csproj" Id="f28115a0-60fa-46f6-8c7d-2e079398f7a1" />
+  </Folder>
+  <Folder Name="/Modules/Orders/">
+    <File Path="Modules/Orders/README.md" />
+    <Project Path="Modules/Orders/Orders.Contracts/Orders.Contracts.csproj" Id="f6306f41-c236-4d6e-a007-d430134305be" />
+    <Project Path="Modules/Orders/Orders.Tests/Orders.Tests.csproj" Id="de4ccd9e-aaad-454f-ab63-a15e1d165f3f" />
+    <Project Path="Modules/Orders/Orders/Orders.csproj" Id="c7d585d1-5801-46c8-93e9-6558c24ff080" />
+  </Folder>
   <Folder Name="/Modules/Payment/">
+    <File Path="Modules/Payment/README.md" />
     <Project Path="Modules/Payment/Payment.Contracts/Payment.Contracts.csproj" />
     <Project Path="Modules/Payment/Payment.Tests/Payment.Tests.csproj" />
     <Project Path="Modules/Payment/Payment/Payment.csproj" />
