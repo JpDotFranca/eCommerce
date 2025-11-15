@@ -38,6 +38,6 @@ public static class CustomersModule
     }
 
     public static IServiceCollection AddCustomersModule(this IServiceCollection services, IConfiguration configuration)
-        => services.AddMediatR(config => config.RegisterServicesFromAssembly(typeof(ModuleRegister).Assembly))
-                   .RegisterRepositories(typeof(ModuleRegister).Assembly);
+        => services.AddMediatR(config => config.RegisterServicesFromAssembly(typeof(CustomersModule).Assembly))
+                   .RegisterRepositories(typeof(CustomersModule).Assembly);
 }

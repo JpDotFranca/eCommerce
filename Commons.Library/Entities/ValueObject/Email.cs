@@ -21,4 +21,7 @@ public class Email
         return false;
     }
     public override int GetHashCode() => Address.GetHashCode(StringComparison.OrdinalIgnoreCase);
+
+    public static implicit operator string(Email email) => email.Address;
+    public static implicit operator Email(string email) => new Email(email);
 }
