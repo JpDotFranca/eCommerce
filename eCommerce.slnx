@@ -1,9 +1,12 @@
 <Solution>
   <Folder Name="/Commons/">
+    <File Path="CLAUDE.md" />
     <File Path="Directory.Build.props" />
     <File Path="Directory.Packages.props" />
     <File Path="README.md" />
     <Project Path="ArchTests/ArchTests.csproj" />
+    <Project Path="Commons.Library/Commons.Library.csproj" Id="ef13e712-f6d4-44c9-b2e1-29ef0d2df789" />
+    <Project Path="CommonsLibrary.Tests/CommonsLibrary.Tests.csproj" Id="6f453c28-bbd7-4a3c-b6b3-8cba10ae8f98" />
   </Folder>
   <Folder Name="/Hosts/">
     <Project Path="Hosts/eCommerce.API/eCommerce.API.csproj" Id="48fc1487-27f1-4f39-a8d7-eb17a906db73" />
