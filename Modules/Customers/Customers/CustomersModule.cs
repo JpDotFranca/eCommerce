@@ -1,16 +1,14 @@
-﻿using Commons.Library.Extensions.ModuleRegistration;
+﻿using Asp.Versioning;
+using Asp.Versioning.Builder;
+using Commons.Library.Extensions.ModuleRegistration;
 using Customers.Application.Features.Create;
 using FluentResults;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Components.Routing;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Asp.Versioning;
-using Asp.Versioning.Builder;
-using Microsoft.AspNetCore.Http;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Customers;
 
@@ -19,7 +17,7 @@ public static class CustomersModule
     public static void AddCustomersEndpoints(this IEndpointRouteBuilder routeBuilder)
     {
         ApiVersionSet apiVersionSet = routeBuilder.NewApiVersionSet()
-             .HasApiVersion(new ApiVersion(1, 0))
+             .HasApiVersion(new ApiVersion(1, 0)) 
              .ReportApiVersions()
              .Build();
 
