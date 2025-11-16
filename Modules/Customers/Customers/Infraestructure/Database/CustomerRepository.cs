@@ -8,6 +8,7 @@ class CustomerRepository : ICustomerRepository
 {
     public async Task<Result<Customer>> Add(Customer customer)
     {
-        throw new NotImplementedException();
+        return await Task.FromResult(Result.Ok(customer));
     }
 }
+ 
