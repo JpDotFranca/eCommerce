@@ -4,7 +4,7 @@ using FluentResults;
 
 namespace Customers.Application.Repositories;
 
-interface ICustomerRepository : IRepository
+interface ICustomersRepository : IRepository
 {
     Task<Result<Customer>> Add(Customer customer);
 }

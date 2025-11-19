@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Customers.Application.Features.Create;
 
-class CreateCustomerHandler(ICustomerRepository CustomerRepository)
+class CreateCustomerHandler(ICustomersRepository CustomerRepository)
     : IRequestHandler<CreateCustomerCommand, Result<int>>
 {
     public async Task<Result<int>> Handle(CreateCustomerCommand createCustomerCommand, CancellationToken cancellationToken)

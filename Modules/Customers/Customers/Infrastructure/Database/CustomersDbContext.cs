@@ -1,18 +1,18 @@
 ﻿using Customers.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Customers.Infraestructure.Database;
+namespace Customers.Infrastructure.Database;
 
-internal class CustomerDbContext : DbContext
+internal class CustomersDbContext : DbContext
 {
-    public CustomerDbContext(DbContextOptions<CustomerDbContext> options)
+    public CustomersDbContext(DbContextOptions<CustomersDbContext> options)
         : base(options) { }
 
     public DbSet<Customer> Customers { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.HasDefaultSchema("customers");
-        modelBuilder.ApplyConfigurationsFromAssembly(typeof(CustomerDbContext).Assembly);
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(CustomersDbContext).Assembly);
         base.OnModelCreating(modelBuilder);
     }
 }

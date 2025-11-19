@@ -9,6 +9,8 @@ public sealed class ContactPerson : Entity
     public Email Email { get; init; }
     public string PhoneNumber { get; init; }
 
+    private ContactPerson() : base() { }
+
     public ContactPerson(string firstName, string fullName, Email email, string phoneNumber)
         :base()
     {
@@ -28,6 +30,4 @@ public sealed class ContactPerson : Entity
     }
 
 }
-
-
  

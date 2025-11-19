@@ -2,11 +2,13 @@
 using Asp.Versioning.Builder;
 using Commons.Library.Extensions.ModuleRegistration;
 using Customers.Application.Features.Create;
+using Customers.Infrastructure.Database;
 using FluentResults;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -39,5 +41,7 @@ public static class CustomersModule
 
     public static IServiceCollection AddCustomersModule(this IServiceCollection services, IConfiguration configuration)
         => services.AddMediatR(config => config.RegisterServicesFromAssembly(typeof(CustomersModule).Assembly))
-                   .RegisterRepositories(typeof(CustomersModule).Assembly);
+                   .RegisterRepositories(typeof(CustomersModule).Assembly)
+                   .AddDbContext<CustomersDbContext>(options=> 
+                                         options.UseNpgsql(configuration.GetConnectionString("PostgreSQL")));
 }

@@ -14,6 +14,7 @@ sealed class Customer : Entity
 
     public ContactPerson ContactPerson { get; init; }
 
+    private Customer() : base() { }
     public Customer(string name, string fantasyName, Email email, CompanyIdentity companyIdentity, ContactPerson contactPerson)
         : base()
     {
@@ -35,4 +36,3 @@ sealed class Customer : Entity
 
     }
 }
- 

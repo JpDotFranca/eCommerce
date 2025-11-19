@@ -8,9 +8,9 @@
 	<ItemGroup>
 		<Folder Include="Features\CreditCard\" />
 		<Folder Include="Domain\Entities\" />
-		<Folder Include="Infraestructure\Database\" />
-		<Folder Include="Infraestructure\Http\" />
-		<Folder Include="Infraestructure\MessageBroker\" />
+		<Folder Include="Infrastructure\Database\" />
+		<Folder Include="Infrastructure\Http\" />
+		<Folder Include="Infrastructure\MessageBroker\" />
 	</ItemGroup>
 
 	<ItemGroup>
